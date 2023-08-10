@@ -19,9 +19,9 @@ ss.style.strokeDashoffset = 760 - (760 * s) / 60;
 
 sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
 min_dot.style.transform = `rotateZ(${m * 6}deg)`;
-hr_dot.style.transform = `rotateZ(${h * 6}deg)`;
+hr_dot.style.transform = `rotateZ(${1020 - (1020 * h) / 24}deg)`;
 
-hr.style.transform = `rotateZ(${h * 6}deg)`;
+hr.style.transform = `rotateZ(${1020 - (1020 * h) / 24}deg)`;
 mn.style.transform = `rotateZ(${m * 6}deg)`;
 sc.style.transform = `rotateZ(${s * 6}deg)`;
 })
